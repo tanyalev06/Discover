@@ -371,8 +371,8 @@ textarea {
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-700 - latin */
   @font-face {
@@ -380,8 +380,8 @@ textarea {
     font-style: normal;
     font-weight: 700;
     src: local(''),
-         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-900 - latin */
   @font-face {
@@ -389,8 +389,8 @@ textarea {
     font-style: normal;
     font-weight: 900;
     src: local(''),
-         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   
   /*box-sizing отвечает за модель расчета размера блока*/
@@ -462,17 +462,66 @@ textarea {
     /*Intro styles start*/
 
     .intro {
-        height: 100vh;
+        min-height: 100vh;
         background: url(../img/intro-bg.jpg) no-repeat center;
         background-size: cover;
         padding-top: 263px;
     }
 
     .intro__title {
+        max-width: 619px;
         font-weight: 500;
         font-size: 50px;
         line-height: 60px;
         color: #ffffff;
+        margin-bottom: 22px;
     }
 
+    .intro__subtitle {
+        max-width: 546px;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 59px;
+    }
+
+    .search-form__info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-form__field {
+        width: 297px;
+        background: transparent url(../img/svg/circle-ico.svg) no-repeat left top 6px;
+        background-size: 20px;
+        border: 0;
+        border-bottom: 2px solid #BFC0C5;
+        margin-right: 60px;
+        padding-left: 43px;
+        padding-bottom: 22px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    
+    .search-form__field::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    .search-form__submit {
+        padding: 15px 39px;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        background: #1B7DFF;
+        border: 0;
+    }
+
+    .search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active {
+        background: #134e9e;
+    }
+    
     /*Intro styles end*/

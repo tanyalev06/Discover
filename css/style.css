@@ -513,8 +513,8 @@ textarea {
     .search-form__submit {
         padding: 15px 39px;
         text-transform: uppercase;
+        font-weight: 500;
         font-size: 24px;
-        line-height: 29px;
         color: #FFFFFF;
         background: #1B7DFF;
         border: 0;
@@ -525,3 +525,43 @@ textarea {
     }
     
     /*Intro styles end*/
+
+     /*Benefits styles start*/
+
+     .benefits__wrap {
+        max-width: 1262px;
+        background-color: #fff;
+        margin: 0 auto;
+        box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+        position: relative;
+     }
+
+     .benefits__title {
+        width: 100%;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 42px;
+        padding: 93px 100px 88px 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        background-color: #fff;
+     }
+
+     .benefits__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /*1fr - размер колонок*/
+        grid-column-gap: 55px;
+        padding: 0 100px;
+     }
+
+     .benefits__card {
+         grid-column: span 1; /*каждая карточка занимает по 1 колонке*/
+     }
+
+     .benefits__card-pic {
+         margin-bottom: 37px;
+     } 
+
+      /*Benefits styles end

@@ -882,3 +882,29 @@ textarea {
       }
 
       /*Top styles end*/
+
+      /*Videos styles start*/
+
+      .videos {
+          width: 100%;
+      }
+
+      .videos__wrapper {
+          position: relative;
+          max-width: 1440px;
+          margin: 0 auto;
+      }
+
+      .video_item {
+          padding-top: 56.25%;/*9:16*100% = 56.25%, где 9:16 соотношение сторон видео на ютубе*/
+      }
+
+      .video__element {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+
+      /*Videos styles end*/

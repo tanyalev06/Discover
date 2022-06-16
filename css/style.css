@@ -680,7 +680,7 @@ textarea {
         display: grid;
         -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
         grid-template-columns: repeat(3, 1fr); /*1fr - размер колонок*/
-        grid-column-gap: 55px;
+        column-gap: 55px;
         padding: 0 100px;
      }
 
@@ -1099,7 +1099,7 @@ textarea {
         }
         .benefits__cards {
             padding: 0 15px;
-            grid-column-gap: 35px;
+            column-gap: 35px;
         }
         .benefits__title {
             padding: 55px 15px;
